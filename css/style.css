@@ -1,0 +1,64 @@
+:root {
+    --color-text: rgb(2, 34, 2);
+    --color-title: rgb(14, 149, 80);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    margin: 20px 0 0 100px;
+    width: 70px;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    margin-right: 20px;
+    color: var(--color-text);
+}
+
+.menu a:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: 25px;
+}
+
+.title n {
+    color: var(--color-title);
+    font-size: 60px;
+}
+
+main {
+    position: relative;
+    margin: 150px 0 0 100px;
+    display: flexbox;
+}
+
+.main-text {
+    margin-top: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 900px;
+    line-height: 1.5;
+}
+
