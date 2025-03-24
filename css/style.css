@@ -1,6 +1,6 @@
 :root {
-    --color-text: rgb(2, 34, 2);
-    --color-title: rgb(14, 149, 80);
+    --color-text: rgb(1, 24, 1);
+    --color-title: rgb(1 113 67);
 }
 
 * {
@@ -14,27 +14,42 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.header-top {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+}
+
 .logo {
     margin: 20px 0 0 100px;
     width: 70px;
 }
 
 .menu {
+    margin: 0 auto;
     position: absolute;
+    padding: 0 2%;
     top: 20px;
     right: 100px;
-    margin-top: 30px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu a {
-    margin-right: 20px;
+    margin-right: 25px;
     color: var(--color-text);
 }
 
 .menu a:hover {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: underline;
 }
 
@@ -49,9 +64,11 @@
 }
 
 main {
+    padding: 0 2%;
     position: relative;
     margin: 150px 0 0 100px;
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-text {
@@ -60,5 +77,67 @@ main {
     box-sizing: border-box;
     margin-right: 900px;
     line-height: 1.5;
+    color: var(--color-text);
 }
 
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: var(--color-title);
+    border-radius: 20px;
+    height: 30px;
+    width: 110px;
+    color: white;
+}
+
+.background {
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    background-color: var(--color-title);
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 100%;
+    z-index: 1;
+}
+
+.img-main {
+    position: absolute;
+    bottom: 50px;
+    right: 250px;
+    height: 500px;
+    z-index: 2;
+}
+
+.social-media {
+    position: absolute;
+    display: block;
+    right: 20px;
+    z-index: 3;
+    width: 20px;
+    bottom: 300px;
+}
+
+.facebook, .instagram, .x {
+    height: 20px;
+    width: 20px;
+    margin: 10px 0;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.thumb1, .thumb2, .thumb3 {
+    height: 80px;
+    margin-left: 30px;
+}
+
+/* Ainda sem responsividade */
